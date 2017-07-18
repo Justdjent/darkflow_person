@@ -34,21 +34,6 @@ script 'path_to_derictory'/test/TUD-Campus.mp4 'path_to_derictory'/test/TUD-Camp
 ```
 Script must create file TUD-Campus_result.mp4 with bounding boxex around people.
 
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
 
 ## Built With
 * [Darkflow](https://github.com/thtrieu/darkflow)
