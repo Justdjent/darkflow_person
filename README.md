@@ -1,4 +1,4 @@
-# People recognition on video with darkflow
+# People detection on video with darkflow
 
 Simple script for people detection at video using darkflow library.
 
@@ -11,9 +11,9 @@ Examples:
 ```
 python script.py input_video_path output_video_path
 ```
-Net was trained on [VOC](http://host.robots.ox.ac.uk/pascal/VOC/voc2007/) data only with 16 epochs
+Net was trained on [VOC](http://host.robots.ox.ac.uk/pascal/VOC/voc2007/) data only with 16 epochs.
 
-accuracy may be better with longer training.
+Accuracy may be improved with longer training.
 
 
 ## Dependencies
@@ -25,7 +25,7 @@ Python3, tensorflow 1.0, numpy, opencv 3, [darkflow](https://github.com/thtrieu/
 
 1. Download this repo.
 
-2. Download weights (.ckpt) files from [GoogleDisk](https://drive.google.com/drive/folders/0B9fBTgfmCIjeM0lxQlBXNlBiOGc) and put them to ckpt/folder.
+2. Download weights (.ckpt) files from [GoogleDisk](https://drive.google.com/drive/folders/0B9fBTgfmCIjeM0lxQlBXNlBiOGc) and put them to ckpt folder.
 
 
 ## Running the tests
@@ -33,9 +33,10 @@ Python3, tensorflow 1.0, numpy, opencv 3, [darkflow](https://github.com/thtrieu/
 To test script run
 
 ```
-script 'path_to_derictory'/test/TUD-Campus.mp4 'path_to_derictory'/test/TUD-Campus_result.mp4
+python script.py 'path_to_derictory'/test/TUD-Campus.mp4 'path_to_derictory'/test/TUD-Campus_result.mp4
 ```
 Script must create file TUD-Campus_result.mp4 with bounding boxex around people.
+
 * Test video from [MOTChallenge](https://motchallenge.net/vis/TUD-Campus)
 
 ## Built With
