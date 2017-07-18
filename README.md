@@ -23,7 +23,10 @@ Python3, tensorflow 1.0, numpy, opencv 3, [darkflow](https://github.com/thtrieu/
 
 ### Installing
 
-To install just download this repo.
+1. Download this repo.
+
+2. Download weights (.ckpt) files from [GoogleDisk](https://drive.google.com/drive/folders/0B9fBTgfmCIjeM0lxQlBXNlBiOGc) and put them to ckpt/folder.
+
 
 ## Running the tests
 
@@ -33,7 +36,7 @@ To test script run
 script 'path_to_derictory'/test/TUD-Campus.mp4 'path_to_derictory'/test/TUD-Campus_result.mp4
 ```
 Script must create file TUD-Campus_result.mp4 with bounding boxex around people.
-
+* Test video from [MOTChallenge](https://motchallenge.net/vis/TUD-Campus)
 
 ## Built With
 * [Darkflow](https://github.com/thtrieu/darkflow)
