@@ -25,7 +25,7 @@ Python3, tensorflow 1.0, numpy, opencv 3, [darkflow](https://github.com/thtrieu/
 
 1. Download this repo.
 
-2. Download weights (.ckpt) files from [GoogleDisk](https://drive.google.com/drive/folders/0B9fBTgfmCIjeM0lxQlBXNlBiOGc) and put them to ckpt folder.
+2. Download weights (.ckpt) files from [GoogleDisk](https://drive.google.com/open?id=0B9fBTgfmCIjeM0lxQlBXNlBiOGc) and put them to ckpt folder.
 
 
 ## Running the tests
