@@ -9,23 +9,19 @@ To make it work you just need to start it and give a path to input and output fi
 Examples:
 
 ```
-python script.py input_video_path output_video_path
+python detector.py -i input_video_path -o output_video_path
 ```
-Net was trained on [VOC](http://host.robots.ox.ac.uk/pascal/VOC/voc2007/) data only with 16 epochs.
-
-Accuracy may be improved with longer training.
-
 
 ## Dependencies
 
-Python3, tensorflow 1.0, numpy, opencv 3, [darkflow](https://github.com/thtrieu/darkflow)
+Python, tensorflow 1.0, numpy, opencv 3, [darkflow](https://github.com/thtrieu/darkflow)
 
 
-### Installing
+## Installing
 
 1. Download this repo.
 
-2. Download weights (.ckpt) files from [GoogleDisk](https://drive.google.com/open?id=0B9fBTgfmCIjeM0lxQlBXNlBiOGc) and put them to ckpt folder.
+2. Download weights YOLOv2 608x608 weights file from [YOLO](https://pjreddie.com/darknet/yolo/) and put them to bin folder.
 
 
 ## Running the tests
@@ -33,14 +29,31 @@ Python3, tensorflow 1.0, numpy, opencv 3, [darkflow](https://github.com/thtrieu/
 To test script run
 
 ```
-python script.py 'path_to_derictory'/test/TUD-Campus.mp4 'path_to_derictory'/test/TUD-Campus_result.mp4
+python detector.py -i 'path_to_input_video_file' -o 'path_to_output_video_file'
 ```
-Script must create file TUD-Campus_result.mp4 with bounding boxex around people.
+Script must create file with bounding boxex around people.
 
-* Test video from [MOTChallenge](https://motchallenge.net/vis/TUD-Campus)
+Test video was downloaded from [VideoBlocks](https://www.videoblocks.com/video/people-in-hotel-area-with-swimming-pool-in-sharm-el-sheikh-egypt-4ohxnqwtxijwaf9o9/)
+
+Sample of processed video you may download [here](https://drive.google.com/open?id=0B9fBTgfmCIjeOXlkdWFGa0xQbW8)
+
+## Parameters
+
+```
+-i - path to input video file.
+
+-o - path to output video file.
+
+-t - confidence level of neural network
+
+-v - Show video in progress
+
+-c - Read input from WebCam
+```
 
 ## Built With
 * [Darkflow](https://github.com/thtrieu/darkflow)
 * [Tensorflow](http://www.dropwizard.io/1.0.2/docs/)
 * [OpenCV](http://opencv.org/)
 
+# human_detector_sp
